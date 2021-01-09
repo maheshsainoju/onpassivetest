@@ -1,0 +1,19 @@
+
+
+<div>
+    <form [formGroup]="loginDetails" (ngSubmit)="isUserValid()">
+        <div>
+            <label>User Name</label>
+            <input type="email" formControlName="email">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="name" formControlName="password">
+        </div>
+        <div>
+            <button>Login</button>
+        </div>
+    </form>
+    
+    <p>Not a User: <a routerLink="/register">Sign Up</a></p>
+</div>
